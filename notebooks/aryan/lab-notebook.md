@@ -40,5 +40,11 @@ We have completed our PCB schematic and layout and have passed the audit on pcbw
 We have also finished the front-end design for our application and have started to look into communication between a back-end mySQL server
 and the ESP32 microcontroller.
 
-<h3>10/19/23 - Individual Progress Report </h3>
+<h3>10/23/23 - Individual Progress Report </h3>
 Unfortunately, the individual progress report has been taking most of our time this week so we were not able to progress much. However, we did order our PCB ourselves.
+
+<h3>10/26/23 - Front End Design </h3>
+Worked on converting my front end figma design to a Swift UI to use for our app. In this front-end, I added api endpoints to send information to the back end server about what the user
+set as their levesls
+
+
