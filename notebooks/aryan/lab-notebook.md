@@ -48,3 +48,11 @@ Worked on converting my front end figma design to a Swift UI to use for our app.
 set as their levesls
 
 
+<h3>11/01/23 - Soldering </h3>
+Spent most of the week working on the PCB and soldering. Nearly done soldering the a4988 after messing up a couple times
+
+<h3>11/03/23 - Finished Soldering </h3>
+We ended up baking a lot of the components since our PCB was too cluttered. We did finish soldering and attempted to test the PCB with our ESP 32 but we couldn't correctly program it. We will try using the dev board first to test our other components
+
+<h3>11/06/23 - Finished App </h3>
+Finished app. Allow users to set stove level and timer. This is sent as an API POST request to our backend MySQL server and update the table to include the user's desired level and timer. Also added an update button which allows users to get the current stove level. This works by sending an API GET request to our database and querying the most recent stove level sent from our rotary encoder.
