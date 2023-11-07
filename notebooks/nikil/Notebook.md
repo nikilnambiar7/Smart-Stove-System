@@ -41,3 +41,6 @@ PCB has arrived. We have started soldering the board. Since none of us have that
 
 <h3>11/5/23 - PCB arrival </h3>
 We have finished soldering PCB. Looking to test it soon. 
+
+<h3>11/6/23 - Tested Servo Motor, finished backend </h3>
+Dinal and I tested out the Servo motors on our finished project with our PCB. This worked with some complications. We will have to look into debugging this tomorrow. We were also running into a cannot find port error when it came to trying to upload code to our ESP32 MCU. On the other side of things the backend is looking good. We were able to set up an API endpoint at our backend and GET the information from our backend with our App. Now all we have to do is work on posting data and then the App will be finished. 
