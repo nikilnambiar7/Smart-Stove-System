@@ -44,3 +44,40 @@ We have finished soldering PCB. Looking to test it soon.
 
 <h3>11/6/23 - Tested Servo Motor, finished backend </h3>
 Dinal and I tested out the Servo motors on our finished project with our PCB. This worked with some complications. We will have to look into debugging this tomorrow. We were also running into a cannot find port error when it came to trying to upload code to our ESP32 MCU. On the other side of things the backend is looking good. We were able to set up an API endpoint at our backend and GET the information from our backend with our App. Now all we have to do is work on posting data and then the App will be finished. 
+
+<h3> 11/7/23 - FrontEnd complete </h3>
+Completed the Front End of our application and integrated it with our backend server. This means that any data that we want to send and receive from our application to our server is possible and complete. Looking next to set up bidirectional communication between server and MCU. Additionally, looking to test out servo, rotary encoder, and LM35.
+
+<h3> 11/9/23 - Tested Servo and LM35 with PCB </h3>
+Finished soldering rest of the components to our breadboard. We then tested out PCB with our Servo motor and LM35 to first see if we can program the ESP32 and then test if it can receive signals from LM35 and send signals to Servo motor. There were some initial probelms again programming the ESP32 regarding port issues, but after downloading some necessary modules we were able to complete the tasks. The LM35 was giving some problems, but that was due to us not using the right library. The servo motor worked flawlessy and is able to tension our pulley system.
+
+<h3>  11/11/23 - Steppper motor and rotary encoder</h3> 
+The two components that aren't working as expected are the stepper motor and rotary encoder. Regarding the rotary encoder it looks like it is giving junk data we have got a replacement one which should be arriving soon. Hopefully that will resolve the issue. We have been following proper procedures from the datasheet and online tutorials regarding how to test it, however, it is really finicky right now. Regarding the stepper motor we have tested many different coil configurations and the best we can hear is an initial jolt. Will look to using debugging tools with voltmeres and amp meter.
+
+<h3> 11/13/23 - Further work with stepper and rotary encoder + tested bidirectional communciation between MCU and server  </h3>
+Stepper motor still not working as expected. Voltage at driver is at expected 10V indiciating the boost module is working. Replacement rotary encoder just came in today, will test this tomorrow as well as hit office hours for stepper motor. Since these components weren't working, worked on setting up bidrectional communication between the MCU and server. Used GETs to receive data from Server on the MCU and POSTs to relay data from MCU to server. This took some time to write up, but worked as expected. 
+
+<h3> 11/14/23 - Rotary encoder and stepper motor</h3>
+Office hours weren't really able to help with the stepper motor. We believe that the issue is that we need more power, which either means increase voltage at the driver or we need more current to drive through the motor. The new rotary encoder behaves exactly the same as the old one. We tried to make sense of the data, but the data actually makes no sense. Supposed to output a -1 for every counterclockwise degree rotation and a +1 for every clockwise degree rotation. However, even while it's stationary the rotary encoder is siginaling that it is rotating. 
+
+<h3> 11/15/23 - Finished logic with servo motor and app</h3>
+Decided to forego rotary encoder and stepper motor for right now. Focused on setting up full end to end logic with LM35, Servo motor, ESP32, Server, and App. Wanted to ensure that we could we get it closest to what we envisioned our project would look like with the rotary encoder and stepper motors working.
+
+<h3> 11/16/23 - Tweaked logic a bit and looked into wifi </h3>
+Right now we weren't able to set up WiFi on IlllinoisNet since there is an additional layer of security. We looked for alternatives and decided to settle on using a hotspot. This works slower, but still gets the job done.
+
+<h3> 11/28/23 - Demo</h3>
+Completed demo. There were a few complications, but after resetting ESP32 everything worked as expected.
+
+<h3> 11/30/23 - Mock Presentation</h3> 
+Set up slides for mock presentation and delivered mock presentation. Received feedback to add more pictures about our project and to explain how the end to end should look like.
+
+<h3>12/4/23 - Presentation Slides</h3>
+Finished presentation slides and went to a couple of run throughs.
+
+<h3> 12/5/23 - Presntation </h3>
+Completed presentation. 
+
+<h3>12/6/23 - Final Paper</h3>
+Completed final paper. That's the end. 
+
