@@ -56,3 +56,22 @@ We ended up baking a lot of the components since our PCB was too cluttered. We d
 
 <h3>11/06/23 - Finished App </h3>
 Finished app. Allow users to set stove level and timer. This is sent as an API POST request to our backend MySQL server and update the table to include the user's desired level and timer. Also added an update button which allows users to get the current stove level. This works by sending an API GET request to our database and querying the most recent stove level sent from our rotary encoder.
+
+<h3> 11/11/23 - Components connecting to App and Database</h3>
+Most of the time this week was integrating our components with our App and Database. Our servo motor is able to be controlled from our Arduino, and I added code to allow the servo motor to be controlled 
+by our app. The servo is engaged when ever the user sets a level that is different than the current level. Additionally, our thermocouple can also send data to our backend. We added functionality to POST the code to our database and then GET that code from our microcontroller. This allows us to engage our servo again when the temperature is in a certain specified range
+
+<h3> 11/ 14/ 23 - Some components are not working</h3>
+Some of our components weren't working. We can not get our stepper motor to turn which is crucial for our functionality. Without it, we can't turn our stove knob. I tried testing the voltage from the stepper motor driver and it looks like our PCB is functional. Our rotary encoder just arrived and its junk. The data we get is too sensitive, and it changes position even when not touched.
+
+<h3> 11/17/23 - Compromises </h3>
+Since some of components cant seem to work, we've decided to just use the working ones for the demo.
+
+<h3> 11/27/23 - Timer fix </h3>
+The timer had an issue. It would only get updated once a value was entered in the database, therefore it would never update if you just set it and left. Since that is not the intended functionality, I added logic in our arduino code to send a POST request every minute and decrement the timer. Once the timer hits zero, the servo motor goes down adn stays down. The timer can't go below zero, and the only way to reset the timer is to set another value.
+
+<h3> 12/4/23 - Final Demo + Presentation </h3>
+Had our final demo and also worked and presented our final demo. We split the slides pretty equally, I mostly worked on subsystems and ending, with some additional work to clean up old diagrams
+
+<h3> 12/5/23 - Final paper</h3>
+Worked on final paper, worked on abstract
