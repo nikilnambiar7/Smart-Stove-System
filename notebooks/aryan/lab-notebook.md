@@ -74,4 +74,4 @@ The timer had an issue. It would only get updated once a value was entered in th
 Had our final demo and also worked and presented our final demo. We split the slides pretty equally, I mostly worked on subsystems and ending, with some additional work to clean up old diagrams
 
 <h3> 12/5/23 - Final paper</h3>
-Worked on final paper, worked on abstract
+Worked on final paper, worked on abstract, subsystems, cost, schedule, and other stuff. A lot of time was spent adding new diagrams and new pictures
