@@ -43,7 +43,8 @@ We have placed the order for out PCB and expect to receive it by the end of Octo
 
 <h3>10/25/23 - Front-End of App is Finished</h3>
 We have finished the front end of our application and have continued to set up communications with the backend while waiting for the PCB to arrive.
-![Front-End Design](https://github.com/nikilnambiar7/Smart-Stove-System/blob/main/notebooks/dinal/frontEnd.PNG)
+
+Front End Design: (https://github.com/nikilnambiar7/Smart-Stove-System/blob/main/notebooks/dinal/frontEnd.PNG)
 
 <h3>10/31/23 - Assembling the PCB</h3>
 The PCB arrived this week so we have begun soldering components onto board. Since none of us have that much experience soldering it is taking sometime. We also realized that we are missing some components needed for our sensors to be properly connected. We have ordered these and they should be coming within the next 2 days. Furthermore, we are continuing to work on the App and also are exploring breadboarding with the devboard.
@@ -56,15 +57,18 @@ Nikil and I tested out the Servo motor on our finished project with our PCB, whi
 
 <h3>11/8/23 - Front-End & Back-End fully integrated</h3>
 Completed the Front End of our application and integrated it with our backend server. This means that any data that we want to send and receive from our application to our server is possible and complete. Looking next to set up bidirectional communication between server and MCU. Additionally, looking to test out servo, rotary encoder, and LM35.
-![toApp Table](https://github.com/nikilnambiar7/Smart-Stove-System/blob/main/notebooks/dinal/toApp.PNG)
-![fromApp Table](https://github.com/nikilnambiar7/Smart-Stove-System/blob/main/notebooks/dinal/fromApp.PNG)
+
+toApp Table: (https://github.com/nikilnambiar7/Smart-Stove-System/blob/main/notebooks/dinal/toApp.PNG)
+
+fromApp Table: (https://github.com/nikilnambiar7/Smart-Stove-System/blob/main/notebooks/dinal/fromApp.PNG)
 
 <h3>11/9/23 - Tested Servo and LM35 with PCB</h3>
 We finished soldering the new components to our breadboard and began trying to upload code to it. We ran into some complications with the port not being read correctly again, but we were quickly able to remedy this error by downloading a few external libraries and modules. We then tested out PCB with our Servo motor and LM35. The LM35 was giving junk data at first, but we were able to use a different library which was able to output very reasonable data. The servo motor worked flawlessy and is able to tension our pulley as expected.
 
 <h3>11/10/23 - Getting LM35 Data to our Back-End</h3>
 We were able to send the data from our LM35 temperature sensor to our back-end server via websocket connections to the ESP32 microcontroller. This data is being sent on a loop currently and will be used to write some logic later this week.
-![LM35 Data](https://github.com/nikilnambiar7/Smart-Stove-System/blob/main/notebooks/dinal/lm35.PNG)
+
+LM35 Data: (https://github.com/nikilnambiar7/Smart-Stove-System/blob/main/notebooks/dinal/lm35.PNG)
 
 <h3>11/11/23 - Everything working as expected except Stepper Motor and Rotary Encoder</h3>
 The two components that aren't working as expected are the stepper motor and rotary encoder. The rotary encoder appears to be outputting junk data. We have got a replacement one that should be arriving soon, which we are hoping will have useful data. We have been following proper procedures from the datasheet and online tutorials regarding how to test it, but it seems to be too sensitive and cannot differentiate between clockwise and counterclockwise. Regarding the stepper motor we have followed the wiring schematic provided by multiple datasheets and nothing seems to get the motor to fully turn. So far all we are able to do is hear a slight jolt when we provide the PCB power. This at least means that the motor is receiving some amoutn of power.
